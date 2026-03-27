@@ -1,0 +1,63 @@
+{
+  "projects": [
+    {
+      "name": "Safeguard",
+      "repos": [
+        {
+          "name": "Backend Cursor",
+          "path": "C:/Users/danie/OneDrive/Documents/Moreland/Safeguard/SPINext-API-VendorAssistant/API"
+        },
+        {
+          "name": "Frontend Cursor",
+          "path": "C:/Users/danie/OneDrive/Documents/Moreland/Safeguard/SPINext-App-VendorAssistant"
+        }
+      ],
+      "sln": {
+        "name": "Backend VS",
+        "path": "C:/Users/danie/OneDrive/Documents/Moreland/Safeguard/SPINext-API-VendorAssistant/safeguard_api.sln"
+      }
+    },
+    {
+      "name": "Warren",
+      "repos": [
+        {
+          "name": "FE Cursor",
+          "path": "C:/Users/danie/OneDrive/Documents/Moreland/Warren/wren-frontend"
+        },
+        {
+          "name": "BE Cursor",
+          "path": "C:/Users/danie/OneDrive/Documents/Moreland/Warren/wren-backend/wren-backend"
+        },
+        {
+          "name": "Mobile App",
+          "path": "C:/Users/danie/OneDrive/Documents/Moreland/Warren/wren-app"
+        }
+      ],
+      "sln": {
+        "name": "",
+        "path": ""
+      }
+    },
+    {
+      "name": "JMI",
+      "repos": [
+        {
+          "name": "Mobile App",
+          "path": "C:/Users/danie/OneDrive/Documents/Moreland/JMI/bluesky-fieldrep"
+        },
+        {
+          "name": "FE",
+          "path": "C:/Users/danie/OneDrive/Documents/Moreland/JMI/JMI HQ Admin"
+        },
+        {
+          "name": "BE",
+          "path": "C:/Users/danie/OneDrive/Documents/Moreland/JMI/JMI_Backend/JMI_Backend"
+        }
+      ],
+      "sln": {
+        "name": "",
+        "path": ""
+      }
+    }
+  ]
+}
