@@ -1,6 +1,20 @@
 {
   "projects": [
     {
+      "name": "Dev Buddy",
+      "repos": [
+        {
+          "name": "Main",
+          "path": "C:/Users/danie/OneDrive/Documents/Claude Apps/DevBuddy"
+        }
+      ],
+      "sln": {
+        "name": "",
+        "path": ""
+      },
+      "accent": "#00d4ff"
+    },
+    {
       "name": "Safeguard",
       "repos": [
         {
@@ -15,7 +29,8 @@
       "sln": {
         "name": "Backend VS",
         "path": "C:/Users/danie/OneDrive/Documents/Moreland/Safeguard/SPINext-API-VendorAssistant/safeguard_api.sln"
-      }
+      },
+      "accent": "#00ff88"
     },
     {
       "name": "Warren",
@@ -36,7 +51,8 @@
       "sln": {
         "name": "",
         "path": ""
-      }
+      },
+      "accent": "#ff3cac"
     },
     {
       "name": "JMI",
@@ -57,7 +73,28 @@
       "sln": {
         "name": "",
         "path": ""
-      }
+      },
+      "accent": "#f7c948"
     }
-  ]
+  ],
+  "music_playlists": [
+    {
+      "name": "Piano Coding Music",
+      "url": "https://open.spotify.com/playlist/5wFMLRsWIkYJZ3U7yQrXp9",
+      "source": "spotify"
+    },
+    {
+      "name": "Video Game Music",
+      "url": "https://www.youtube.com/watch?v=55DE_ePBUAU&list=PLx38H1y4jw0kWCxU1Tia7vLCX4m4UW0FH&index=1",
+      "source": "youtube"
+    }
+  ],
+  "todo_items": [],
+  "focus_stats": {
+    "total_focus_minutes": 4,
+    "total_xp": 55,
+    "sessions_completed": 3,
+    "streak_days": 1,
+    "last_focus_date": "2026-03-28"
+  }
 }

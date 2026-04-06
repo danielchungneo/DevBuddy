@@ -1,0 +1,35 @@
+---
+description: Dev Buddy Python package layout — where new code goes and import rules
+alwaysApply: true
+---
+
+# Dev Buddy architecture
+
+## Layout
+
+- **`main.py`** — Entry only: `ctk.set_*`, import `DevLauncherApp`, `mainloop()`. No feature logic.
+- **`devbuddy/`** — All app code. **`app.py`** = `DevLauncherApp` (shell, nav, module wiring only).
+- **`theme.py`** — Colors, spacing, palette constants. No behavior.
+- **`utils.py`** — Pure helpers (color math, screen bbox). No Tk.
+- **`config.py`** — `CONFIG_PATH`, `load_config` / `save_config`, data shape normalization.
+- **`playlists.py`**, **`launcher_ops.py`** — Domain / OS helpers without main window state.
+- **`widgets.py`** — Reusable CTk control factories.
+- **`eyedropper.py`** — Standalone overlay window.
+- **`dialogs/`** — One `CTkToplevel` per file; export from `dialogs/__init__.py`.
+
+## When adding features
+
+- **New sidebar section / big UI block** — New `devbuddy/<name>.py` for logic if non-UI; build UI in `app.py` or extract dialogs to `dialogs/`.
+- **New modal** — `devbuddy/dialogs/<name>_dialog.py` + export in `dialogs/__init__.py`; import theme/widgets, not `app`.
+- **Persistence** — Extend `config.py` and normalization; do not scatter path logic.
+- **Styling** — `theme.py` / `widgets.py` only.
+
+## Imports
+
+- Use **`from devbuddy.<module> import ...`** inside the package.
+- **No** cycles: `dialogs` must not import `DevLauncherApp` from `app`.
+- Repo assets: `from icon_gen import ICON_PATH` from `app.py` (run from repo root).
+
+## Style
+
+- Match existing naming and CTk patterns; avoid drive-by refactors outside the task.
